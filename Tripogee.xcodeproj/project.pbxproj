@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4705B9D61E74A7BD00249DFA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4705B9D51E74A7BD00249DFA /* Social.framework */; };
+		47093F161E6E622500C37EF9 /* draw.png in Resources */ = {isa = PBXBuildFile; fileRef = 47093F151E6E622500C37EF9 /* draw.png */; };
+		47093F1A1E6E62AA00C37EF9 /* DestinationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47093F191E6E62AA00C37EF9 /* DestinationsTableViewController.swift */; };
+		470B79AA1E6F379800B1A7B3 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B79A91E6F379800B1A7B3 /* DrawingView.swift */; };
+		470E217D1E637B8700135DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470E217C1E637B8700135DF3 /* AppDelegate.swift */; };
+		470E21851E637B8700135DF3 /* Tripogee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 470E21831E637B8700135DF3 /* Tripogee.xcdatamodeld */; };
+		470E21871E637B8700135DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470E21861E637B8700135DF3 /* Assets.xcassets */; };
+		470E218A1E637B8700135DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470E21881E637B8700135DF3 /* LaunchScreen.storyboard */; };
+		4710798D1E70F1FF00561E32 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710798C1E70F1FF00561E32 /* AttractionTableViewCell.swift */; };
+		471079971E71200900561E32 /* no-image-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 471079961E71200900561E32 /* no-image-icon.jpg */; };
+		471079A31E7338E900561E32 /* DestinationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471079A21E7338E900561E32 /* DestinationMapViewController.swift */; };
+		471079A51E734D8700561E32 /* DestinationSearchableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471079A41E734D8700561E32 /* DestinationSearchableViewController.swift */; };
+		472696181E6938CD00734E58 /* GooglePlacesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472696171E6938CD00734E58 /* GooglePlacesRequest.swift */; };
+		4774E25A1E64D9B7005FBF02 /* DrawingOptionsPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4774E2591E64D9B7005FBF02 /* DrawingOptionsPopoverViewController.swift */; };
+		47867C7D1E750DDC00017BE5 /* TravelersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47867C7C1E750DDC00017BE5 /* TravelersTableViewController.swift */; };
+		47867C821E75289500017BE5 /* Traveler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47867C811E75289500017BE5 /* Traveler.swift */; };
+		4788979B1E655EDF0088B8D5 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4788979A1E655EDF0088B8D5 /* Attraction.swift */; };
+		478897A91E673E4D0088B8D5 /* TripMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478897A81E673E4D0088B8D5 /* TripMenuViewController.swift */; };
+		478897B21E674F420088B8D5 /* DestinationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478897B11E674F420088B8D5 /* DestinationSearchTableViewController.swift */; };
+		478897B51E677AE30088B8D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478897B31E677AE30088B8D5 /* Main.storyboard */; };
+		478897B71E6784950088B8D5 /* MapSearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478897B61E6784950088B8D5 /* MapSearchingViewController.swift */; };
+		47946E231E6E1A09009C40AC /* BrainstormLibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47946E221E6E1A09009C40AC /* BrainstormLibraryCollectionViewController.swift */; };
+		47946E271E6E1D99009C40AC /* Brainstorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47946E261E6E1D99009C40AC /* Brainstorm.swift */; };
+		47946E291E6E1EB9009C40AC /* BrainstormCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47946E281E6E1EB9009C40AC /* BrainstormCollectionViewCell.swift */; };
+		47A491E41E7B2957008BCEDB /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A491E31E7B2957008BCEDB /* Stroke.swift */; };
+		47A491EA1E7B34CC008BCEDB /* city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A491E91E7B34CC008BCEDB /* city.jpg */; };
+		47A491EC1E7B34FD008BCEDB /* travelers.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A491EB1E7B34FD008BCEDB /* travelers.png */; };
+		47A491EE1E7B3507008BCEDB /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A491ED1E7B3507008BCEDB /* settings.png */; };
+		47A491F01E7B3512008BCEDB /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A491EF1E7B3512008BCEDB /* map.png */; };
+		47C0E6DC1E763F9C004F6EB0 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C0E6DA1E763F9C004F6EB0 /* clear.png */; };
+		47C0E6DD1E763F9C004F6EB0 /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C0E6DB1E763F9C004F6EB0 /* undo.png */; };
+		47C444AF1E6395F40035BB6E /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C444AE1E6395F40035BB6E /* FetchedResultsTableViewController.swift */; };
+		47C444B21E6396690035BB6E /* UITableViewDataSource+NSFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C444B11E6396690035BB6E /* UITableViewDataSource+NSFetchedResultsController.swift */; };
+		47C444B41E6397940035BB6E /* CurrentTripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C444B31E6397940035BB6E /* CurrentTripsTableViewController.swift */; };
+		47C444B61E63982B0035BB6E /* CurrentTripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C444B51E63982B0035BB6E /* CurrentTripTableViewCell.swift */; };
+		47C444B81E63985E0035BB6E /* TripSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C444B71E63985E0035BB6E /* TripSettingsViewController.swift */; };
+		47C444BA1E6399770035BB6E /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C444B91E6399770035BB6E /* Trip.swift */; };
+		47CB7B341E7905C000A9FBAC /* launchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CB7B321E7905C000A9FBAC /* launchLogo.png */; };
+		47D391AD1E64F4A20068FD1F /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D391AC1E64F4A20068FD1F /* Destination.swift */; };
+		47D391AF1E64FDDA0068FD1F /* AttractionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D391AE1E64FDDA0068FD1F /* AttractionsTableViewController.swift */; };
+		47DD88111E6E643C00CF3A99 /* BrainstormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD88101E6E643C00CF3A99 /* BrainstormViewController.swift */; };
+		47ED1FEA1E7E2B6D00406CDE /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED1FE91E7E2B6D00406CDE /* StarsView.swift */; };
+		47ED1FEC1E7E306800406CDE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 47ED1FEB1E7E306800406CDE /* star.png */; };
+		47ED1FEE1E7F12F300406CDE /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 47ED1FED1E7F12F300406CDE /* cloud.png */; };
+		47ED1FF21E7F226C00406CDE /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 47ED1FF11E7F226C00406CDE /* lightning.png */; };
+		47ED1FF41E7F2A0100406CDE /* drop.png in Resources */ = {isa = PBXBuildFile; fileRef = 47ED1FF31E7F2A0100406CDE /* drop.png */; };
+		47ED1FF81E7F39D100406CDE /* README in Resources */ = {isa = PBXBuildFile; fileRef = 47ED1FF71E7F39D100406CDE /* README */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47C0E6D11E75F530004F6EB0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4705B9D51E74A7BD00249DFA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		47093F151E6E622500C37EF9 /* draw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = draw.png; sourceTree = "<group>"; };
+		47093F191E6E62AA00C37EF9 /* DestinationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationsTableViewController.swift; sourceTree = "<group>"; };
+		470B79A91E6F379800B1A7B3 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		470E21791E637B8700135DF3 /* Tripogee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripogee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		470E217C1E637B8700135DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		470E21841E637B8700135DF3 /* Tripogee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tripogee.xcdatamodel; sourceTree = "<group>"; };
+		470E21861E637B8700135DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		470E21891E637B8700135DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		470E218B1E637B8700135DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4710798C1E70F1FF00561E32 /* AttractionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionTableViewCell.swift; sourceTree = "<group>"; };
+		471079961E71200900561E32 /* no-image-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "no-image-icon.jpg"; sourceTree = "<group>"; };
+		471079A21E7338E900561E32 /* DestinationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationMapViewController.swift; sourceTree = "<group>"; };
+		471079A41E734D8700561E32 /* DestinationSearchableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSearchableViewController.swift; sourceTree = "<group>"; };
+		472696171E6938CD00734E58 /* GooglePlacesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesRequest.swift; sourceTree = "<group>"; };
+		4774E2591E64D9B7005FBF02 /* DrawingOptionsPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingOptionsPopoverViewController.swift; sourceTree = "<group>"; };
+		47867C7C1E750DDC00017BE5 /* TravelersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelersTableViewController.swift; sourceTree = "<group>"; };
+		47867C811E75289500017BE5 /* Traveler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Traveler.swift; sourceTree = "<group>"; };
+		4788979A1E655EDF0088B8D5 /* Attraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
+		478897A81E673E4D0088B8D5 /* TripMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripMenuViewController.swift; sourceTree = "<group>"; };
+		478897B11E674F420088B8D5 /* DestinationSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSearchTableViewController.swift; sourceTree = "<group>"; };
+		478897B41E677AE30088B8D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		478897B61E6784950088B8D5 /* MapSearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchingViewController.swift; sourceTree = "<group>"; };
+		47946E221E6E1A09009C40AC /* BrainstormLibraryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainstormLibraryCollectionViewController.swift; sourceTree = "<group>"; };
+		47946E261E6E1D99009C40AC /* Brainstorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brainstorm.swift; sourceTree = "<group>"; };
+		47946E281E6E1EB9009C40AC /* BrainstormCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainstormCollectionViewCell.swift; sourceTree = "<group>"; };
+		47A491E31E7B2957008BCEDB /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		47A491E91E7B34CC008BCEDB /* city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = city.jpg; sourceTree = "<group>"; };
+		47A491EB1E7B34FD008BCEDB /* travelers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = travelers.png; sourceTree = "<group>"; };
+		47A491ED1E7B3507008BCEDB /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		47A491EF1E7B3512008BCEDB /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		47C0E6DA1E763F9C004F6EB0 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		47C0E6DB1E763F9C004F6EB0 /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo.png; sourceTree = "<group>"; };
+		47C444AE1E6395F40035BB6E /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
+		47C444B11E6396690035BB6E /* UITableViewDataSource+NSFetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewDataSource+NSFetchedResultsController.swift"; sourceTree = "<group>"; };
+		47C444B31E6397940035BB6E /* CurrentTripsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTripsTableViewController.swift; sourceTree = "<group>"; };
+		47C444B51E63982B0035BB6E /* CurrentTripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTripTableViewCell.swift; sourceTree = "<group>"; };
+		47C444B71E63985E0035BB6E /* TripSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripSettingsViewController.swift; sourceTree = "<group>"; };
+		47C444B91E6399770035BB6E /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		47CB7B321E7905C000A9FBAC /* launchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchLogo.png; sourceTree = "<group>"; };
+		47D391AC1E64F4A20068FD1F /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		47D391AE1E64FDDA0068FD1F /* AttractionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionsTableViewController.swift; sourceTree = "<group>"; };
+		47DD88101E6E643C00CF3A99 /* BrainstormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainstormViewController.swift; sourceTree = "<group>"; };
+		47ED1FE91E7E2B6D00406CDE /* StarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		47ED1FEB1E7E306800406CDE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		47ED1FED1E7F12F300406CDE /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		47ED1FF11E7F226C00406CDE /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
+		47ED1FF31E7F2A0100406CDE /* drop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop.png; sourceTree = "<group>"; };
+		47ED1FF71E7F39D100406CDE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		470E21761E637B8600135DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4705B9D61E74A7BD00249DFA /* Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4705B9D41E74A7BC00249DFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4705B9D51E74A7BD00249DFA /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		470E21701E637B8600135DF3 = {
+			isa = PBXGroup;
+			children = (
+				47ED1FF71E7F39D100406CDE /* README */,
+				470E217B1E637B8700135DF3 /* Tripogee */,
+				470E217A1E637B8700135DF3 /* Products */,
+				4705B9D41E74A7BC00249DFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		470E217A1E637B8700135DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				470E21791E637B8700135DF3 /* Tripogee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		470E217B1E637B8700135DF3 /* Tripogee */ = {
+			isa = PBXGroup;
+			children = (
+				47A491E81E7B2C63008BCEDB /* Storyboards */,
+				47A491E61E7B2C34008BCEDB /* Tabs */,
+				47C0E6E51E7742C7004F6EB0 /* GooglePlacesAPI */,
+				47C444B01E6396170035BB6E /* Core Data */,
+				47A491E71E7B2C57008BCEDB /* Supporting Files */,
+				47C0E6DE1E7740AB004F6EB0 /* Images */,
+			);
+			path = Tripogee;
+			sourceTree = "<group>";
+		};
+		4788979E1E6665F60088B8D5 /* Brainstorm */ = {
+			isa = PBXGroup;
+			children = (
+				478CEC501E7A0A3A00F8386B /* Library */,
+				478CEC511E7A0A4300F8386B /* Drawing */,
+			);
+			name = Brainstorm;
+			sourceTree = "<group>";
+		};
+		478897A51E6677640088B8D5 /* Destinations */ = {
+			isa = PBXGroup;
+			children = (
+				471079A21E7338E900561E32 /* DestinationMapViewController.swift */,
+				478897B11E674F420088B8D5 /* DestinationSearchTableViewController.swift */,
+				47093F191E6E62AA00C37EF9 /* DestinationsTableViewController.swift */,
+				471079A41E734D8700561E32 /* DestinationSearchableViewController.swift */,
+			);
+			name = Destinations;
+			sourceTree = "<group>";
+		};
+		478897AC1E67446C0088B8D5 /* Trip Planning */ = {
+			isa = PBXGroup;
+			children = (
+				47D391AA1E64EDF80068FD1F /* Current Trips */,
+				47C444B71E63985E0035BB6E /* TripSettingsViewController.swift */,
+				478897A81E673E4D0088B8D5 /* TripMenuViewController.swift */,
+				47867C7C1E750DDC00017BE5 /* TravelersTableViewController.swift */,
+				478897A51E6677640088B8D5 /* Destinations */,
+				478897C21E68A0320088B8D5 /* Attractions */,
+			);
+			name = "Trip Planning";
+			sourceTree = "<group>";
+		};
+		478897C21E68A0320088B8D5 /* Attractions */ = {
+			isa = PBXGroup;
+			children = (
+				47ED1FE91E7E2B6D00406CDE /* StarsView.swift */,
+				47D391AE1E64FDDA0068FD1F /* AttractionsTableViewController.swift */,
+				4710798C1E70F1FF00561E32 /* AttractionTableViewCell.swift */,
+			);
+			name = Attractions;
+			sourceTree = "<group>";
+		};
+		478CEC4F1E79BEB500F8386B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				478897B61E6784950088B8D5 /* MapSearchingViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		478CEC501E7A0A3A00F8386B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				47946E281E6E1EB9009C40AC /* BrainstormCollectionViewCell.swift */,
+				47946E221E6E1A09009C40AC /* BrainstormLibraryCollectionViewController.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		478CEC511E7A0A4300F8386B /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				4774E2591E64D9B7005FBF02 /* DrawingOptionsPopoverViewController.swift */,
+				470B79A91E6F379800B1A7B3 /* DrawingView.swift */,
+				47DD88101E6E643C00CF3A99 /* BrainstormViewController.swift */,
+			);
+			name = Drawing;
+			sourceTree = "<group>";
+		};
+		47A491E01E7B241C008BCEDB /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				47867C811E75289500017BE5 /* Traveler.swift */,
+				47C444B91E6399770035BB6E /* Trip.swift */,
+				47D391AC1E64F4A20068FD1F /* Destination.swift */,
+				4788979A1E655EDF0088B8D5 /* Attraction.swift */,
+			);
+			name = Trips;
+			sourceTree = "<group>";
+		};
+		47A491E51E7B2AEE008BCEDB /* Brainstorms */ = {
+			isa = PBXGroup;
+			children = (
+				47946E261E6E1D99009C40AC /* Brainstorm.swift */,
+				47A491E31E7B2957008BCEDB /* Stroke.swift */,
+			);
+			name = Brainstorms;
+			sourceTree = "<group>";
+		};
+		47A491E61E7B2C34008BCEDB /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				478CEC4F1E79BEB500F8386B /* Map */,
+				478897AC1E67446C0088B8D5 /* Trip Planning */,
+				4788979E1E6665F60088B8D5 /* Brainstorm */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		47A491E71E7B2C57008BCEDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				470E21861E637B8700135DF3 /* Assets.xcassets */,
+				470E217C1E637B8700135DF3 /* AppDelegate.swift */,
+				470E218B1E637B8700135DF3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47A491E81E7B2C63008BCEDB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				478897B31E677AE30088B8D5 /* Main.storyboard */,
+				470E21881E637B8700135DF3 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		47C0E6DE1E7740AB004F6EB0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				47ED1FF31E7F2A0100406CDE /* drop.png */,
+				47ED1FF11E7F226C00406CDE /* lightning.png */,
+				47ED1FED1E7F12F300406CDE /* cloud.png */,
+				47ED1FEB1E7E306800406CDE /* star.png */,
+				47CB7B321E7905C000A9FBAC /* launchLogo.png */,
+				47A491E91E7B34CC008BCEDB /* city.jpg */,
+				47A491EB1E7B34FD008BCEDB /* travelers.png */,
+				47A491EF1E7B3512008BCEDB /* map.png */,
+				47A491ED1E7B3507008BCEDB /* settings.png */,
+				47C0E6DA1E763F9C004F6EB0 /* clear.png */,
+				47C0E6DB1E763F9C004F6EB0 /* undo.png */,
+				47093F151E6E622500C37EF9 /* draw.png */,
+				471079961E71200900561E32 /* no-image-icon.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		47C0E6E51E7742C7004F6EB0 /* GooglePlacesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				472696171E6938CD00734E58 /* GooglePlacesRequest.swift */,
+			);
+			name = GooglePlacesAPI;
+			sourceTree = "<group>";
+		};
+		47C444B01E6396170035BB6E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				47A491E01E7B241C008BCEDB /* Trips */,
+				47A491E51E7B2AEE008BCEDB /* Brainstorms */,
+				47C444B11E6396690035BB6E /* UITableViewDataSource+NSFetchedResultsController.swift */,
+				47C444AE1E6395F40035BB6E /* FetchedResultsTableViewController.swift */,
+				470E21831E637B8700135DF3 /* Tripogee.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		47D391AA1E64EDF80068FD1F /* Current Trips */ = {
+			isa = PBXGroup;
+			children = (
+				47C444B31E6397940035BB6E /* CurrentTripsTableViewController.swift */,
+				47C444B51E63982B0035BB6E /* CurrentTripTableViewCell.swift */,
+			);
+			name = "Current Trips";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		470E21781E637B8600135DF3 /* Tripogee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470E218E1E637B8700135DF3 /* Build configuration list for PBXNativeTarget "Tripogee" */;
+			buildPhases = (
+				470E21751E637B8600135DF3 /* Sources */,
+				470E21761E637B8600135DF3 /* Frameworks */,
+				470E21771E637B8600135DF3 /* Resources */,
+				47C0E6D11E75F530004F6EB0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tripogee;
+			productName = Tripogee;
+			productReference = 470E21791E637B8700135DF3 /* Tripogee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		470E21711E637B8600135DF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Austin Jacobs";
+				TargetAttributes = {
+					470E21781E637B8600135DF3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N85DKD949W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 470E21741E637B8600135DF3 /* Build configuration list for PBXProject "Tripogee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 470E21701E637B8600135DF3;
+			productRefGroup = 470E217A1E637B8700135DF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				470E21781E637B8600135DF3 /* Tripogee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		470E21771E637B8600135DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47ED1FF41E7F2A0100406CDE /* drop.png in Resources */,
+				478897B51E677AE30088B8D5 /* Main.storyboard in Resources */,
+				47C0E6DD1E763F9C004F6EB0 /* undo.png in Resources */,
+				47A491F01E7B3512008BCEDB /* map.png in Resources */,
+				470E218A1E637B8700135DF3 /* LaunchScreen.storyboard in Resources */,
+				47A491EA1E7B34CC008BCEDB /* city.jpg in Resources */,
+				47C0E6DC1E763F9C004F6EB0 /* clear.png in Resources */,
+				471079971E71200900561E32 /* no-image-icon.jpg in Resources */,
+				47ED1FF81E7F39D100406CDE /* README in Resources */,
+				47ED1FF21E7F226C00406CDE /* lightning.png in Resources */,
+				47A491EC1E7B34FD008BCEDB /* travelers.png in Resources */,
+				47CB7B341E7905C000A9FBAC /* launchLogo.png in Resources */,
+				47ED1FEC1E7E306800406CDE /* star.png in Resources */,
+				47A491EE1E7B3507008BCEDB /* settings.png in Resources */,
+				470E21871E637B8700135DF3 /* Assets.xcassets in Resources */,
+				47093F161E6E622500C37EF9 /* draw.png in Resources */,
+				47ED1FEE1E7F12F300406CDE /* cloud.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		470E21751E637B8600135DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47946E271E6E1D99009C40AC /* Brainstorm.swift in Sources */,
+				47C444B41E6397940035BB6E /* CurrentTripsTableViewController.swift in Sources */,
+				478897B21E674F420088B8D5 /* DestinationSearchTableViewController.swift in Sources */,
+				47C444B81E63985E0035BB6E /* TripSettingsViewController.swift in Sources */,
+				470B79AA1E6F379800B1A7B3 /* DrawingView.swift in Sources */,
+				478897B71E6784950088B8D5 /* MapSearchingViewController.swift in Sources */,
+				47D391AD1E64F4A20068FD1F /* Destination.swift in Sources */,
+				470E21851E637B8700135DF3 /* Tripogee.xcdatamodeld in Sources */,
+				47C444AF1E6395F40035BB6E /* FetchedResultsTableViewController.swift in Sources */,
+				4774E25A1E64D9B7005FBF02 /* DrawingOptionsPopoverViewController.swift in Sources */,
+				47ED1FEA1E7E2B6D00406CDE /* StarsView.swift in Sources */,
+				47867C7D1E750DDC00017BE5 /* TravelersTableViewController.swift in Sources */,
+				47C444BA1E6399770035BB6E /* Trip.swift in Sources */,
+				471079A31E7338E900561E32 /* DestinationMapViewController.swift in Sources */,
+				47C444B21E6396690035BB6E /* UITableViewDataSource+NSFetchedResultsController.swift in Sources */,
+				47946E231E6E1A09009C40AC /* BrainstormLibraryCollectionViewController.swift in Sources */,
+				4788979B1E655EDF0088B8D5 /* Attraction.swift in Sources */,
+				471079A51E734D8700561E32 /* DestinationSearchableViewController.swift in Sources */,
+				472696181E6938CD00734E58 /* GooglePlacesRequest.swift in Sources */,
+				47C444B61E63982B0035BB6E /* CurrentTripTableViewCell.swift in Sources */,
+				4710798D1E70F1FF00561E32 /* AttractionTableViewCell.swift in Sources */,
+				470E217D1E637B8700135DF3 /* AppDelegate.swift in Sources */,
+				478897A91E673E4D0088B8D5 /* TripMenuViewController.swift in Sources */,
+				47D391AF1E64FDDA0068FD1F /* AttractionsTableViewController.swift in Sources */,
+				47946E291E6E1EB9009C40AC /* BrainstormCollectionViewCell.swift in Sources */,
+				47093F1A1E6E62AA00C37EF9 /* DestinationsTableViewController.swift in Sources */,
+				47DD88111E6E643C00CF3A99 /* BrainstormViewController.swift in Sources */,
+				47867C821E75289500017BE5 /* Traveler.swift in Sources */,
+				47A491E41E7B2957008BCEDB /* Stroke.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		470E21881E637B8700135DF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470E21891E637B8700135DF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		478897B31E677AE30088B8D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				478897B41E677AE30088B8D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		470E218C1E637B8700135DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		470E218D1E637B8700135DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		470E218F1E637B8700135DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N85DKD949W;
+				INFOPLIST_FILE = Tripogee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs193p.ajacobs7.Tripogee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		470E21901E637B8700135DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N85DKD949W;
+				INFOPLIST_FILE = Tripogee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs193p.ajacobs7.Tripogee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		470E21741E637B8600135DF3 /* Build configuration list for PBXProject "Tripogee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470E218C1E637B8700135DF3 /* Debug */,
+				470E218D1E637B8700135DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470E218E1E637B8700135DF3 /* Build configuration list for PBXNativeTarget "Tripogee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470E218F1E637B8700135DF3 /* Debug */,
+				470E21901E637B8700135DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		470E21831E637B8700135DF3 /* Tripogee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				470E21841E637B8700135DF3 /* Tripogee.xcdatamodel */,
+			);
+			currentVersion = 470E21841E637B8700135DF3 /* Tripogee.xcdatamodel */;
+			path = Tripogee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 470E21711E637B8600135DF3 /* Project object */;
+}

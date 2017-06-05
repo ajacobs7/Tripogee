@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="K8Z-8G-e9U">
+                                <rect key="frame" x="66" y="166" width="244" height="335.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ro2-JB-XZ2">
+                                        <rect key="frame" x="0.0" y="0.0" width="244" height="244"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ro2-JB-XZ2" secondAttribute="height" multiplier="1:1" id="5mb-VD-ti7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tripogee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-wq-FIn">
+                                        <rect key="frame" x="0.0" y="264" width="244" height="71.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="mSf-ss-HyA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="mSf-ss-HyA"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="mSf-ss-HyA"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K8Z-8G-e9U" secondAttribute="height" multiplier="341:71" id="k6O-KE-b4v"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="k6O-KE-b4v"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="horizontal">
+                                    <mask key="constraints">
+                                        <include reference="k6O-KE-b4v"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18816232860000001" green="0.7275627616" blue="0.90375158629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="K8Z-8G-e9U" secondAttribute="bottom" constant="124.5" id="3ZQ-PY-Oqe"/>
+                            <constraint firstItem="K8Z-8G-e9U" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Bp-ck-2TJ"/>
+                            <constraint firstItem="K8Z-8G-e9U" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ixg-BH-rZe"/>
+                            <constraint firstItem="K8Z-8G-e9U" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kli-wG-ayh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K8Z-8G-e9U" secondAttribute="trailing" constant="177" id="RpL-Qs-2eF">
+                                <variation key="heightClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="K8Z-8G-e9U" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="104.5" id="aao-Hs-PCv"/>
+                            <constraint firstItem="K8Z-8G-e9U" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="178" id="chn-qV-4ka">
+                                <variation key="heightClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="K8Z-8G-e9U" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ltb-5V-fCh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9Bp-ck-2TJ"/>
+                                <exclude reference="Ixg-BH-rZe"/>
+                                <exclude reference="Kli-wG-ayh"/>
+                                <exclude reference="RpL-Qs-2eF"/>
+                                <exclude reference="aao-Hs-PCv"/>
+                                <exclude reference="chn-qV-4ka"/>
+                                <exclude reference="ltb-5V-fCh"/>
+                                <exclude reference="3ZQ-PY-Oqe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Kli-wG-ayh"/>
+                                <exclude reference="RpL-Qs-2eF"/>
+                                <exclude reference="aao-Hs-PCv"/>
+                                <exclude reference="chn-qV-4ka"/>
+                                <include reference="ltb-5V-fCh"/>
+                                <exclude reference="3ZQ-PY-Oqe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="9Bp-ck-2TJ"/>
+                                <include reference="Ixg-BH-rZe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.717391304347828" y="407.24637681159425"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchLogo.png" width="200" height="244"/>
+    </resources>
+</document>

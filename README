@@ -1,0 +1,22 @@
+Tripogee
+by Austin Jacobs
+
+Tripogee is an iPhone app which I built to practice my iOS/swift skills. The app uses the following iOS features:
+- UITableView/Controller/Cell
+- UICollectionView/Controller/Cell/Layout
+- UINavigation/TabBar/SplitViewController
+- Label, Button, Switch, TextField, TextView, Slider, etc
+- UIView with draw(rect), UIBezierPath, CG functions
+- UIPopoverPresentationController, Popover Segue
+- Size Classes and Autolayout Constraints
+- NSManagedObject/Context, NSFetchResult, NSPredicate
+- Google Places API (3rd party integration)
+- UIView Animation, UIDynamicAnimator
+- NSFileManager, NSCache
+- MapKit, Core Location, MKAnnotation/LocalSearch
+- Camera, Photo Library, UIImagePickerController
+- Date, DateComponents, NSCalendar
+- Contacts Kit
+- Event Kit
+- UISearchController
+- UIPickerController, UIDatePicker
